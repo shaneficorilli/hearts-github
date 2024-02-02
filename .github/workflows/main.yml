@@ -34,15 +34,9 @@ jobs:
         with:
           namespace: "demo-trial"
           pr: "false"
-          sarif_file: endor-labs.sarif
-          
-      - name: Endor Labs Scan PR to Default Branch
-        if: github.event_name == 'pull_request'
-        uses: endorlabs/github-action@v1
-        with:
-          namespace: "demo-trial"
-          pr: true
-          enable_pr_comments: true
+          scan_dependencies: true
+          scan_secrets: true
+          scan_summary_output_type: "table"
           github_token: ${{ secrets.GITHUB_TOKEN }}
           sarif_file: endor-labs.sarif
       
