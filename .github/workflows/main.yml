@@ -31,7 +31,7 @@ jobs:
       - name: Endor Labs Scan
         uses: endorlabs/github-action@v1.1.2
         with:
-          namespace: "demo-trial"
+          namespace: "shane-demo"
           enable_pr_comments: true
           scan_dependencies: true
           scan_secrets: true
