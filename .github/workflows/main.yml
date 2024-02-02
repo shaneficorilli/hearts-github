@@ -40,7 +40,7 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: endorlabs/github-action@v1
         with:
-          namespace: "endorlabs-hearts-github"
+          namespace: "demo-trial"
           pr: true
           enable_pr_comments: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
