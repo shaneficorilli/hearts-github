@@ -35,6 +35,7 @@ jobs:
           enable_pr_comments: true
           scan_dependencies: true
           scan_secrets: true
+          enable_github_action_token: false
           scan_summary_output_type: "table"
           api_key: ${{ secrets.ENDOR_API_CREDENTIALS_KEY }}
           api_secret: ${{ secrets.ENDOR_API_CREDENTIALS_SECRET }}
